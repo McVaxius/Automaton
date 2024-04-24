@@ -233,7 +233,7 @@ internal class DateWithDestiny : Feature
                 if (InventoryManager.Instance()->GetInventoryItemCount(medal) >= 10)
                 {
                     // check for other companions, summon them, repeat
-                    Svc.Log.Debug("Have 15 of the relevant Legendary Medal. Swapping minions");
+                    Svc.Log.Debug("Have 10 of the relevant Legendary Medal. Swapping minions");
                     step = "Swapping minions";
                     var minion = yokai.FirstOrDefault(x => CompanionUnlocked(x.Minion) && InventoryManager.Instance()->GetInventoryItemCount(x.Medal) < 10).Minion;
                     if (minion != default)
